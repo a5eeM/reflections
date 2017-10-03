@@ -9,3 +9,6 @@ How can you use the staging area to make sure you have one commit per logical ch
 
 What are some situtations when branches would be helpful in keeping your history organized ? How ould branches help ?
 - If we want to work on an experimental feature or a new feature without disturbing the main master branch we can use branches to achieve that. Branches help because the changes committed are on the branch and not the master branch.
+
+How do diagrams help you visualize the branch structure ?
+- Diagrams help us visualize the branch structure as the whole history of a repository can be seen, including the branches. By usung git log --graph we can actually see the creation of branches and their respectivr commits.
