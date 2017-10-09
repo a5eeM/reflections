@@ -1,0 +1,20 @@
+What happens when you initialize a repository ? Why do you need to do it ?
+- When a repository is initialized we get a .git hidden directory created in the repository, which is created so that it can keep track of the files and help git in knowing which files were modified / created.
+
+How is the staging area different from the working directory and the repository ? What value do you think it offers ?
+- staging area is a git concept where files are moved before a commit, the files still are available in the working directory but only the files added to staging area are available for a commit. The value that staging area offers is that while working you might not want to commit a file, so staging area is good for the files you actually do want to commit.
+
+How can you use the staging area to make sure you have one commit per logical change ?
+- Befor commiting we can use git diff and git diff --staged to check on the modifications done on a particular file, and from them can deduce whether the change is logical or not.
+
+What are some situtations when branches would be helpful in keeping your history organized ? How ould branches help ?
+- If we want to work on an experimental feature or a new feature without disturbing the main master branch we can use branches to achieve that. Branches help because the changes committed are on the branch and not the master branch.
+
+How do diagrams help you visualize the branch structure ?
+- Diagrams help us visualize the branch structure as the whole history of a repository can be seen, including the branches. By usung git log --graph we can actually see the creation of branches and their respectivr commits.
+
+What is the result of merging two branches together ? Why do we represnt it in the diagram the way we do ?
+- Mergin two branches will combine the commits of those two branches using a recursive strategy. So the resulting branch will include all the changes in the two branches and will become the current head of the branch. The diagram of the resulting merge shows that the merge commit has parents - the heads of prior branches before merging.
+
+What are the pros and cons of Git's automatic merging vs always doing merges manually ?
+- The main pro points of automatic merging are that it saves time when the commits are trivial and are not conflicting. It also helps to focus on part of code which is conflicting during the merge. The major con would be as against manual merges to overlook a situation where potential dangerous code gets merged with the master branch.
