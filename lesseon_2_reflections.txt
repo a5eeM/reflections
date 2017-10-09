@@ -12,3 +12,6 @@ What are some situtations when branches would be helpful in keeping your history
 
 How do diagrams help you visualize the branch structure ?
 - Diagrams help us visualize the branch structure as the whole history of a repository can be seen, including the branches. By usung git log --graph we can actually see the creation of branches and their respectivr commits.
+
+What is the result of merging two branches together ? Why do we represnt it in the diagram the way we do ?
+- Mergin two branches will combine the commits of those two branches using a recursive strategy. So the resulting branch will include all the changes in the two branches and will become the current head of the branch. The diagram of the resulting merge shows that the merge commit has parents - the heads of prior branches before merging.
